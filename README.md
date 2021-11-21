@@ -20,4 +20,8 @@ GetNPUsers htb.local/ -no-pass -usersfile users
 
 - Crack the hash/ticket with `john`
 
-- 
+- Enumerate with smbclient and the credentials
+```bash
+smbclient -L <target> -U "htb.local\<username>" 
+>>>> password -> I put the password
+```
